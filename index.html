@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Fitness Spot | Parallax Background</title>
+
+<!------ GOOGLE FONTS ------>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,800" rel="stylesheet" type="text/css">
+<!------ BOOTSTRAP ------>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!------ BOOTBOX ------>
+<link rel="stylesheet" type="text/css" href="css/bootbox.css" />
+<!------ PORTFOLIO ------>
+<link rel="stylesheet" type="text/css" href="css/jquery.portfolio.css" />
+<!------ MAIN STYLESHEET ------>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style-responsive.css" />
+<!------ FONT AWESOME ------>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" type="text/css">
+
+<!-- IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<!-- SCRIPTS -->
+<script src="js/modernizr.custom.js"></script>
+</head>
+<!--BODY starts here-->
+<body data-spy="scroll" data-target="#side-nav" data-offset="100">
+<!-- LOADING Div -->
+<div id="loading"></div>
+<!-- Go Top BTN -->
+<div class="hidden-xs btn-float">
+  <div class="go-top" title=""><i class="fa fa-arrow-up"></i></div>
+</div>
+
+<!-- Callback Bootbox -->
+<div class="bb-alert alert alert-info" style="display:none;"> <span></span> </div>
+<!-- INTRO -->
+<header class="big-intro-img hd-subhding" id="intro">
+  <div class="container"> 
+    <!-- LOGO & NAVBAR -->
+    <div class="navbar navbar-default"> 
+      <!-- Responsive Menu -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <h1 class="brand"> <a class="navbar-brand" href="#" data-toggle="tooltip" data-placement="right" title=""> Fitness<span>Spot</span> </a> </h1>
+        <!-- end Logo / Brand --> 
+        
+      </div>
+      <!-- end responsive menu --> 
+      
+      <!-- Menu -->
+      <nav class="collapse navbar-collapse navbar-ex1-collapse" id="side-nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#intro" >Home</a></li>
+          <li><a href="#features" >Features</a></li>
+          <li><a href="#portfolio">Gallery</a></li>
+          <li><a href="#team">Trainers</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navbar --> 
+    
+    <!-- CAROUSEL -->
+    <div id="introCarousel" class="carousel slide fadeing" style="z-index:3; position:relative;">
+      <div class="carousel-inner text-center">
+        <div class="active item">
+          <h2>welcome to fitness</h2>
+          <h5>Bootstrap &nbsp;-&nbsp; Responsive Design &nbsp;-&nbsp; Retina Ready - Parallax</h5>
+        </div>
+        <!-- end item 1 -->
+        <div class="item">
+          <h2>Perfect fitness solution</h2>
+          <h5>Bootstrap &nbsp;-&nbsp; Responsive Design &nbsp;-&nbsp; Retina Ready - Parallax</h5>
+        </div>
+      </div>
+      <!-- end carousel-inner --> 
+      
+      <!-- Controls --> 
+      <a class="left carousel-control" href="#introCarousel" data-slide="prev"> <span class="icon-prev"></span> </a> <a class="right carousel-control" href="#introCarousel" data-slide="next"> <span class="icon-next"></span> </a> </div>
+    <!-- end introCarousel -->
+    
+    <!-- BUTTON -->
+    <button class="btn btn-primary hidden-xs" onclick="$('html,body').animate({ scrollTop: $('#features').offset().top }, 300);"> get started </button>
+  </div>
+  <!-- end container --> 
+</header>
+<!-- end big-intro-img 
+========================================================--> 
+
+<!-- FEATURES starts here -->
+<section id="features">
+  <div class="container text-center">
+    <h2 class="heading text-center">Welcome To Fitness Spot</h2>
+    <h4 class="heading text-center">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default <br/>
+      model text, and a search for 'lorem ipsum' will uncover many web sites</h4>
+    <div class="row">
+      <div class="col-md-3 item">
+        <div class="icon"> <i class="fa fa-heart"></i> <!-- With color, just add: style="color:#00aeff;" --> 
+        </div>
+        <h3>Cardio Fitness</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse adipiscing, dolor at suscipit dictum, libero metus scele.</p>
+      </div>
+      <!-- end item 1 -->
+      
+      <div class="col-md-3 item">
+        <div class="icon"> <i class="fa fa-wheelchair"></i> <!-- With color, just add: style="color:#fcca03;" --> 
+        </div>
+        <h3>Workout</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse adipiscing, dolor at suscipit dictum, libero metus scele.</p>
+      </div>
+      <!-- end item 2 -->
+      
+      <div class="col-md-3 item">
+        <div class="icon"> <i class="fa fa-jpy"></i> <!-- With color, just add: style="color:#0bb697;" --> 
+        </div>
+        <h3>Yoga Pilates</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse adipiscing, dolor at suscipit dictum, libero metus scele.</p>
+      </div>
+      <!-- end item 3 -->
+      
+      <div class="col-md-3 item">
+        <div class="icon"> <i class="fa fa-bolt"></i> <!-- With color, just add: style="color:#DD1812;" --> 
+        </div>
+        <h3>Boxing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse adipiscing, dolor at suscipit dictum, libero metus scele.</p>
+      </div>
+      <!-- end item 4 --> 
+      
+    </div>
+    <!-- end row --> 
+    
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end FEATURES 
+==========================================================================--> 
+
+<!-- GALLERY starts here -->
+<section id="portfolio" class="text-center">
+  <h2 class="heading">FITNESS CLASSES</h2>
+  <h4 class="heading">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default <br/>
+    model text, and a search for 'lorem ipsum' will uncover many web sites</h4>
+  <div class="main">
+    <ul id="og-grid" class="og-grid">
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/1.jpg" data-title="Strenth Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/1.jpg" alt="img01" /> </a>
+        <p class="gallery-title">Strenth Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/2.jpg" data-title="Cardio Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/2.jpg" alt="img02" /> </a>
+        <p class="gallery-title">Cardio Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/3.jpg" data-title="Yoga Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/3.jpg" width="250" height="180" alt="img03" /> </a>
+        <p class="gallery-title">Yoga Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/4.jpg" data-title="Indoor boxing" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/4.jpg" width="250" height="180" alt="img04" /> </a>
+        <p class="gallery-title">Indoor boxing</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/5.jpg" data-title="Strenth Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/5.jpg" width="250" height="180" alt="img05" /> </a>
+        <p class="gallery-title">Strenth Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/6.jpg" data-title="Cardio Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/6.jpg" width="250" height="180" alt="img06" /> </a>
+        <p class="gallery-title">Cardio Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/7.jpg" data-title="Yoga Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/7.jpg" width="250" height="180" alt="img07" /> </a>
+        <p class="gallery-title">Yoga Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/8.jpg" data-title="Indoor boxing" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/8.jpg" width="250" height="180" alt="img08" /> </a>
+        <p class="gallery-title">Indoor boxing</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/9.jpg" data-title="Strenth Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/9.jpg" width="250" height="180" alt="img09" /> </a>
+        <p class="gallery-title">Strenth Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/10.jpg" data-title="Cardio Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/10.jpg" width="250" height="180" alt="img10" /> </a>
+        <p class="gallery-title">Cardio Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/11.jpg" data-title="Yoga Training" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/11.jpg" width="250" height="180" alt="img10" /> </a>
+        <p class="gallery-title">Yoga Training</p>
+      </li>
+      <li> <a href="#" data-largesrc="img/portfolio/zoom_pics/12.jpg" data-title="Indoor boxing" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt congue ante ut condimentum. Donec lacus neque, molestie vel lacus at, consequat pharetra ante. Donec semper nisl eu odio dignissim semper."> <img src="img/portfolio/12.jpg" width="250" height="180" alt="img10" /> <span class="overlay hover" style="left: 245.38800000000003px; top: 0px; display: inline;"></span> </a>
+        <p class="gallery-title">Indoor boxing</p>
+      </li>
+    </ul>
+  </div>
+  <!-- end main --> 
+  
+</section>
+<!-- end PORTFOLIO 
+==================================================================================--> 
+
+<!-- TEAM starts here -->
+<section id="team" class="text-center">
+  <div class="container">
+    <h2 class="heading">Fitness Trainers</h2>
+    <h4 class="heading">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default <br/>
+      model text, and a search for 'lorem ipsum' will uncover many web sites</h4>
+    <div class="row">
+      <div class="me col-md-3">
+        <div class="img"> <img src="img/team/team-2.jpg" class="bg img-responsive" alt="" width="400" height="400" /> 
+          <!-- <img src="js/holder.js/100%x100%" class="bg img-responsive" alt="" width="400" height="400" /> --> 
+        </div>
+        <div class="clearfix"></div>
+        <p class="name">Steve</p>
+        <p class="job">FITNEES SPECIALIST</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur end adipiscing elit.</p>
+        <div class="icons"> <a href="https://twitter.com/" target="_blank" title="" class="twitter"></a> <a href="https://plus.google.com/" target="_blank" title="" class="googleplus"></a> <a href="http://www.skype.com/" target="_blank" title="" class="skype"></a> <a href="https://www.facebook.com/" target="_blank" title="" class="facebook"></a> </div>
+      </div>
+      <!-- member 1 -->
+      
+      <div class="me col-md-3">
+        <div class="img"> <img src="img/team/team-1.jpg" class="bg img-responsive" alt="" width="400" height="400" /> 
+          <!-- <img src="js/holder.js/100%x100%" class="bg img-responsive" alt="" width="400" height="400" /> --> 
+        </div>
+        <div class="clearfix"></div>
+        <p class="name">Amly</p>
+        <p class="job">CARDIO SPECIALIST</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur end adipiscing elit.</p>
+        <div class="icons"> <a href="https://twitter.com/" target="_blank" title="" class="twitter"></a> <a href="https://plus.google.com/" target="_blank" title="" class="googleplus"></a> <a href="http://www.skype.com/" target="_blank" title="" class="skype"></a> <a href="https://www.facebook.com/" target="_blank" title="" class="facebook"></a> </div>
+      </div>
+      <!-- member 2 -->
+      
+      <div class="me col-md-3">
+        <div class="img"> <img src="img/team/6.jpg" class="bg img-responsive" alt="" width="400" height="400" /> 
+          <!-- <img src="js/holder.js/100%x100%" class="bg img-responsive" alt="" width="400" height="400" /> --> 
+        </div>
+        <div class="clearfix"></div>
+        <p class="name">Jeffrey</p>
+        <p class="job">YOGA SPECIALIST</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur end adipiscing elit.</p>
+        <div class="icons"> <a href="https://twitter.com/" target="_blank" title="" class="twitter"></a> <a href="https://plus.google.com/" target="_blank" title="" class="googleplus"></a> <a href="http://www.skype.com/" target="_blank" title="" class="skype"></a> <a href="https://www.facebook.com/" target="_blank" title="" class="facebook"></a> </div>
+      </div>
+      <!-- member 3 -->
+      
+      <div class="me col-md-3">
+        <div class="img"> <img src="img/team/team-3.jpg" class="bg img-responsive" alt="" width="400" height="400" /> 
+          <!-- <img src="js/holder.js/100%x100%" class="bg img-responsive" alt="" width="400" height="400" /> --> 
+        </div>
+        <div class="clearfix"></div>
+        <p class="name">Suzanna</p>
+        <p class="job">KARATE SPECIALIST</p>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur end adipiscing elit.</p>
+        <div class="icons"> <a href="https://twitter.com/" target="_blank" title="" class="twitter"></a> <a href="https://plus.google.com/" target="_blank" title="" class="googleplus"></a> <a href="http://www.skype.com/" target="_blank" title="" class="skype"></a> <a href="https://www.facebook.com/" target="_blank" title="" class="facebook"></a> </div>
+      </div>
+      <!-- member 4 --> 
+      
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end TEAM
+================================================================== --> 
+
+<!-- ABOUT US starts here -->
+<section id="about">
+  <div class="hd-subhding text-center" data-stellar-background-ratio="0.0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"> </div>
+        <div class="col-md-12">
+          <h2>Fitness <span>Spot</span></h2>
+          <p>is a modern Responsive HTML5/CSS3 template for Perfect Fitness.<br/>
+            Our partners are below.</p>
+        </div>
+      </div>
+      <!-- end row --> 
+      
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end hd-subhding --> 
+</section>
+<!-- end ABOUT US 
+========================================================================--> 
+
+<!-- PARTNERS starts here -->
+<section id="partners" class="text-center">
+  <div class="container">
+    <h2 class="heading">Our Partners</h2>
+    <div class="row">
+      <div class="col-sm-3 col-md-3"> <a href="#" target="_blank" title=""> <img src="img/logo/google.jpg" class="img-responsive" alt="" /> </a> </div>
+      <div class="col-sm-3 col-md-3"> <a href="#" target="_blank" title=""> <img src="img/logo/dropbox.jpg" class="img-responsive" alt="" /> </a> </div>
+      <div class="col-sm-3 col-md-3"> <a href="#" target="_blank" title=""> <img src="img/logo/facebook.jpg" class="img-responsive" alt="" /> </a> </div>
+      <div class="col-sm-3 col-md-3"> <a href="#" target="_blank" title=""> <img src="img/logo/twitter.jpg" class="img-responsive" alt="" /> </a> </div>
+    </div>
+    <!-- end row --> 
+    
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end PARTNERS 
+=================================================================================--> 
+
+<!-- CONTACT starts here -->
+<section id="contact">
+  <div class="container">
+    <h2 class="heading text-center">Contact Us</h2>
+    <h4 class="heading text-center">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default <br/>
+      model text, and a search for 'lorem ipsum' will uncover many web sites</h4>
+    <div class="col-lg-6">
+      <form role="form" id="form-contact" method="post" action="php/contact.php">
+        <div class="form-group">
+          <label for="contact-name">Your Name (required)</label>
+          <input type="text" class="form-control required" name="First" id="contact-name" value=""/>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email Address (required)</label>
+          <input type="email" class="form-control required" name="Email" id="contact-email" value="" />
+        </div>
+        <div class="form-group">
+          <label class="mesg">Your Message</label>
+          <textarea class="form-control" rows="3"  name="Comments" title=""></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="contact-message"/>
+      </form>
+    </div>
+    <div class="col-lg-6">
+      <section id="location" class="hidden-xs" data-stellar-background-ratio="1.5">
+        <h2 class="heading">Contact Details</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+        <br/>
+        <p><i class="fa fa-bell"></i> (7.00 - 20.00)</p>
+        <p><i class="fa fa-phone"></i> +1 422 333 4444 </p>
+        <p><i class="fa fa-envelope"></i> <a href="#">mail@example.com</a>
+        <p><i class="fa fa-home"></i> USA, San Francisco, 23010 </p>
+      </section>
+    </div>
+  </div>
+  <!-- end container --> 
+  
+</section>
+<!-- end CONTACT 
+=============================================================================--> 
+
+<!-- TESTIMONIALS starts here -->
+<section id="testimonials" class="text-center" data-stellar-background-ratio="0.7">
+  <div class="container">
+    <h2 class="heading">What Our Customers are Saying</h2>
+    <div id="testimonialsCarousel" class="carousel slide fadeing">
+      <div class="carousel-inner text-center">
+        <div class="active item">
+          <div class="img"><img src="img/testimonials/image1.png" width="72" height="72" alt="" /></div>
+          <p class="customer_comment">"Thanks to Fitness Spot, I not only have the body I always wanted, but I feel confident, strong and like<br/>
+            I can do anything!"</p>
+          <span></span>
+          <h5>Sarah</h5>
+        </div>
+        <!-- end item 1 -->
+        
+        <div class="item">
+          <div class="img"><img src="img/testimonials/image1.png" width="72" height="72" alt="" /></div>
+          <p class="customer_comment">"If you like to truly transform your physique, not just maintain it, you have ot step up your effort, exercising with intensity<br/>
+            a minimum of 5 days per week."</p>
+          <span></span>
+          <h5>Jhon Doe</h5>
+        </div>
+        <!-- end item 1 -->
+        
+        <div class="item">
+          <div class="img"><img src="img/testimonials/image1.png" width="72" height="72" alt="" /></div>
+          <p class="customer_comment">"Fitness has proven to be the best decision i have made. I can finally balance my work, family and still<br/>
+            have to work out!"</p>
+          <span></span>
+          <h5>Karen</h5>
+        </div>
+        <!-- end item 1 --> 
+        
+      </div>
+      <!-- end carousel-inner --> 
+      
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+      </ol>
+    </div>
+    <!-- end testimonialsCarousel --> 
+    
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end TESTIMONIALS 
+=================================================================================--> 
+
+<!-- FOOTER starts here -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="copy">
+        <div class="col-md-6 copyright-txt"> &copy; 2014 - All Rights Reserved, FitnessSpot.com </div>
+        <div class="col-md-6 text-right">
+          <section id="social" class="icons text-center"> <a href="https://twitter.com/" target="_blank" title="" class="twitter"></a> <a href="http://dribbble.com/" target="_blank" title="" class="dribbble"></a> <a href="https://www.pinterest.com/" target="_blank" title="" class="pinterest"></a> <a href="http://www.flickr.com/" target="_blank" title="" class="flickr"></a> <a href="https://www.facebook.com/" target="_blank" title="" class="facebook"></a> <a href="http://www.linkedin.com/" target="_blank" title="" class="linkedin"></a> <a href="https://plus.google.com/" target="_blank" title="" class="googleplus"></a> <a href="http://www.skype.com/" target="_blank" title="" class="skype"></a> <a href="http://www.youtube.com/" target="_blank" title="" class="youtube"></a> </section>
+        </div>
+      </div>
+      <!-- end copy --> 
+      
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</footer>
+<!-- end FOOTER 
+=================================================================================--> 
+
+<!-- JQUERY & BOOTSTRAP SCRIPTS here --> 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/scrollspy.js"></script> 
+
+<!-- NICE SCROLLY --> 
+<script src="js/jquery.nicescroll.min.js"></script> 
+
+<!-- PORTFOLIO --> 
+<script src="js/jquery.grid.js"></script> 
+
+<!-- HOLDER --> 
+<script src="js/holder.js"></script> 
+
+<!-- CAPABILITIES --> 
+<script src="js/jquery.easy-pie-chart.js"></script> 
+
+<!-- PARALLAX - STELLAR --> 
+<script src="js/jquery.stellar.js"></script> 
+
+<!-- BOOTBOX --> 
+<script src="js/bootbox.callback.js"></script> 
+<script src="js/bootbox.min.js"></script> 
+
+<!-- SCRIPT GLOBAL --> 
+<script src="js/global.js"></script>
+</body>
+</html>

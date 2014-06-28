@@ -1,0 +1,123 @@
+/* ===== Small devices (Smartphones, 767px and down) ===== */
+@media(max-width: 767px) {
+
+/*****INTRO******/
+
+header.big-intro-img {
+}
+
+	/* Carousel */
+	header.big-intro-img #introCarousel h2 {
+ font-size: 40px;
+}
+ header.big-intro-img #introCarousel h4 {
+ display: none;
+}
+.copyright-txt{padding-bottom:20px;}
+header.big-intro-img .btn-primary{display:block !important;}
+
+/********TEAM********/
+
+body #team .me {
+ background: transparent;
+ width: 100% !important;
+ margin: 0 0 70px !important;
+ padding: 0;
+}
+ body #team .me p {
+ padding: 0 20px;
+}
+
+/******* TESTIMONIALS********/
+
+#testimonials {
+ background-position: center 320px;
+}
+}
+
+/* ===== Medium devices (tablets, 991px and down) ===== */
+@media (max-width: 991px) {
+
+/******INTRO*******/
+
+header.big-intro-img {
+/* CODE HERE */
+}
+
+	/* Navbar */
+	header.big-intro-img .navbar-default .brand {
+ margin-top: 4px !important;
+}
+
+/******FEATURES******/
+
+#features {
+ padding-bottom: 0;
+}
+ #features .row .item {
+ margin-bottom: 100px;
+}
+
+/********ABOUT US********/
+
+#about {
+ padding: 0;
+ text-align: center;
+}
+ #about h2 {
+ margin: 50px 0 20px 0;
+}
+ #about p {
+ margin: 0 0 20px 0;
+}
+
+/********PORTFOLIO*********/
+
+#portfolio {
+ padding: 50px 0 100px 0;
+}
+
+/*********TEAM**********/
+
+#team .container {
+ padding: 70px 0 20px 0;
+}
+ #team .me {
+ width: 40% !important;
+ margin: 0 5% 70px !important;
+ float: left;
+}
+ #team .me .img {
+ background: transparent !important;
+}
+ #team .me .img img {
+ display: inline-block !important;
+ opacity: 1;
+}
+
+/**********PARTNERS**********/
+
+#partners {
+ padding: 40px 0 0 0;
+}
+ #partners .row div {
+ margin-bottom: 50px;
+}
+ #partners a {
+ padding: 0;
+}
+
+/**********FOOTER************/
+
+footer {
+ text-align: center;
+}
+ footer nav {
+ text-align: center;
+ margin: 20px 0 0;
+}
+ footer nav a {
+ display: block;
+ margin-top: 10px;
+}
+} /* Medium devices (tablets, 992px and down) */
